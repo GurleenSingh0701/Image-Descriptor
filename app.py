@@ -12,7 +12,7 @@ genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 # Use the latest supported vision model. You may need to update this based on current documentation.
 # Check the official Google AI documentation for the most up-to-date model name.
 try:
-    model_img = genai.GenerativeModel('gemini-1.5-flash') # replace this line
+    model_img = genai.GenerativeModel('gemini-2.5-flash') # replace this line
 except Exception as e:
     st.error(f"Error initializing model or listing models: {e}. Please ensure you have the correct model name and API key, and that vision models are available to you.")
     st.stop()
